@@ -95,6 +95,11 @@ h1, h2, h3 { line-height: 1.05; text-transform: uppercase; letter-spacing: .01em
 .feature ul { margin: 8px 0 0; padding-left: 20px; }
 
 /* Band */
+.sources { padding-bottom: 40px; }
+.sources-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 40px; margin: 0; }
+.sources-list div { border-top: 1px solid var(--line); padding-top: 12px; }
+.sources-list dt { font-family: "Barlow Condensed", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; font-size: 20px; }
+.sources-list dd { margin: 4px 0 0; color: var(--muted); }
 .band { background: var(--band); color: var(--on-band); padding: 56px 0; margin-top: 24px; }
 .band .eyebrow, .band .hl { color: inherit; opacity: .85; }
 .band h2 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; }
@@ -136,6 +141,7 @@ details p { margin: 0 0 12px; }
   .feature:nth-of-type(even) .shot { order: 0; }
   .feature .shot { width: min(60%, 220px); margin: 0 auto; }
   .band .grid { grid-template-columns: 1fr; }
+  .sources-list { grid-template-columns: 1fr; }
   .brand span { font-size: 19px; }
 }
 
