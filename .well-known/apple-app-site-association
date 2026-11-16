@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TCLPQ9UR4Y.com.pelicari.MapaDoBoi"
+        ],
+        "components": [
+          {
+            "/": "/cut/*"
+          },
+          {
+            "/": "/en/cut/*"
+          },
+          {
+            "/": "/fr/cut/*"
+          }
+        ]
+      }
+    ]
+  }
+}
