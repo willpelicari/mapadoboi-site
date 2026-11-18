@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if (/[?&]open=web(&|$)/.test(location.search)) location.replace("/app/cut/br/br11?alias=bananinha")</script>
 <script src="/analytics.js?v=3"></script>
 <title>Bananinha · Mapa do Boi</title>
 <meta name="description" content="A trim of the strip loin: strips of meat from between the rib bones it carries. Small and well marbled; the fat melts over the coals and keeps it juicy. Quick on a hot grill, as long as the flare-ups are watched.">
@@ -15,36 +16,68 @@
 <meta property="og:title" content="Bananinha">
 <meta property="og:description" content="A trim of the strip loin: strips of meat from between the rib bones it carries. Small and well marbled; the fat melts over the coals and keeps it juicy. Quick on a hot grill, as long as the flare-ups are watched.">
 <meta property="og:url" content="https://mapadoboi.wiltonpelicari.com/en/cut/br/br11/bananinha/">
-<meta property="og:image" content="https://mapadoboi.wiltonpelicari.com/icon.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://mapadoboi.wiltonpelicari.com/img/cuts/bananinha.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/icon.png">
 <style>
-body { font: 17px/1.55 -apple-system, system-ui, sans-serif; max-width: 40em; margin: 0 auto; padding: 32px 16px; color: #222; background: #F2EFEA; }
-@media (prefers-color-scheme: dark) { body { color: #eee; background: #17181A; } a { color: #ff9a6b; } }
+:root { --ink: #222; --bg: #F2EFEA; --soft: #E9E5DE; --link: #B8461A; --meat: #9E3324; --on: #E2622B; --nm: #DDD6CB; --edge: #17181A; }
+@media (prefers-color-scheme: dark) { :root { --ink: #eee; --bg: #17181A; --soft: #222326; --link: #ff9a6b; --nm: #3A3B40; --edge: #8C877E; } }
+body { font: 17px/1.55 -apple-system, system-ui, sans-serif; max-width: 40em; margin: 0 auto; padding: 32px 16px; color: var(--ink); background: var(--bg); }
+a { color: var(--link); }
 header { display: flex; align-items: center; gap: 12px; }
 header img { width: 48px; height: 48px; border-radius: 11px; }
 header a { color: inherit; text-decoration: none; font-weight: 700; }
 h1 { text-transform: uppercase; margin: 32px 0 4px; line-height: 1.15; }
+h2 { font-size: 20px; margin: 40px 0 12px; }
+h3 { font-size: 17px; margin: 0 0 2px; }
 .sub { opacity: .7; margin: 0 0 16px; }
+figure { margin: 20px 0; }
+figure img { display: block; width: 100%; height: auto; max-width: 420px; border-radius: 16px; }
+figcaption, .meta, .why, .note, footer { opacity: .7; }
+figcaption { font-size: 13px; margin-top: 6px; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 28px 0; }
 .store, .open { display: inline-block; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
 .open { background: #B8461A; color: #fff; }
 .store { border: 1.5px solid currentColor; color: inherit; }
-.note, footer { opacity: .7; }
+.map { display: block; width: 100%; height: auto; }
+.map .c { fill: var(--meat); stroke: var(--bg); stroke-width: 2; stroke-linejoin: round; }
+.map .c.dash { fill: transparent; stroke-dasharray: 4 3; }
+.map .c.on { fill: var(--on); }
+.map a:hover .c, .map a:focus .c { fill: #c4502c; }
+.map .nm { fill: var(--nm); pointer-events: none; }
+.map .outline { fill: none; stroke: var(--edge); stroke-width: 2; stroke-linejoin: round; pointer-events: none; }
+ul.abroad { padding-left: 20px; }
+ul.abroad li { margin-bottom: 10px; }
+.why { font-size: 15px; }
+.prep { background: var(--soft); border-radius: 16px; padding: 16px 20px; margin-bottom: 12px; }
+.prep .meta { font-size: 15px; margin: 0; }
+.prep ol { margin: 10px 0 0; padding-left: 20px; }
+ul.all { columns: 2 14em; padding-left: 0; list-style: none; }
+ul.all li { break-inside: avoid; margin-bottom: 4px; }
+ul.all .here a { font-weight: 700; color: inherit; text-decoration: none; }
 footer { font-size: 15px; margin-top: 40px; }
 </style>
 </head>
 <body>
-<header><img src="/icon.png" alt=""><a href="/">Mapa do Boi</a></header>
+<header><img src="/icon.png" alt=""><a href="/en/">Mapa do Boi</a></header>
 <h1>Bananinha</h1>
 <p class="sub">Contrafilé (no. 11) · Brazilian</p>
+<figure><img src="/img/cuts/bananinha.jpg" width="560" height="560" alt="Bananinha"><figcaption>Illustrative AI-generated image.</figcaption></figure>
 <p>A trim of the strip loin: strips of meat from between the rib bones it carries. Small and well marbled; the fat melts over the coals and keeps it juicy. Quick on a hot grill, as long as the flare-ups are watched.</p>
 <div class="actions">
-<a class="open" href="mapadoboi://cut/br/br11?alias=bananinha">Open in the app</a>
+<a class="open" id="open" href="/app/cut/br/br11?alias=bananinha" data-ios="https://www.wiltonpelicari.com/mapadoboi/en/cut/br/br11/bananinha/?open=web" data-android="intent://cut/br/br11?alias=bananinha#Intent;scheme=mapadoboi;package=com.pelicari.mapadoboi;S.browser_fallback_url=https%3A%2F%2Fmapadoboi.wiltonpelicari.com%2Fapp%2Fcut%2Fbr%2Fbr11%3Falias%3Dbananinha;end">Open in the app</a>
+<script>(function(a){var u=navigator.userAgent;if(/iPhone|iPad|iPod/.test(u)||/Macintosh/.test(u)&&navigator.maxTouchPoints>1){a.href=a.dataset.ios;return}if(!/Android/.test(u))return;var web=a.href;a.href=a.dataset.android;a.addEventListener('click',function(){var t=setTimeout(function(){if(!document.hidden)location.href=web},1600),stop=function(){clearTimeout(t)};document.addEventListener('visibilitychange',function(){if(document.hidden)stop()});addEventListener('pagehide',stop);addEventListener('blur',stop)})})(document.getElementById('open'))</script>
 <a class="store" href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi">Get it on Google Play</a>
 <a class="store" href="https://apps.apple.com/app/id6830041105">Download on the App Store</a>
 </div>
+<h2>Where it is on the steer</h2>
+<svg class="map" viewBox="0 0 680 460" role="img" aria-label="Chart of the cuts with Bananinha highlighted"><defs><clipPath id="body"><path d="M110 11 L123 11 L127 13 L130 17 L131 26 L136 31 L142 33 L186 33 L188 38 L172 50 L175 52 L181 52 L186 48 L201 51 L205 48 L235 19 L247 13 L266 11 L278 14 L286 20 L288 26 L289 44 L294 50 L304 55 L334 64 L394 64 L440 52 L504 41 L539 42 L579 48 L597 53 L608 60 L625 76 L635 94 L638 150 L640 194 L641 236 L643 267 L645 291 L648 303 L651 320 L654 334 L655 349 L653 359 L651 367 L649 361 L648 369 L644 363 L642 371 L640 361 L637 354 L636 340 L637 324 L640 307 L640 291 L638 267 L637 236 L636 205 L629 214 L623 234 L620 251 L621 268 L624 286 L628 303 L629 322 L630 340 L632 359 L637 379 L640 396 L641 406 L645 414 L644 417 L640 417 L636 421 L638 438 L635 441 L616 445 L608 445 L605 441 L598 441 L598 438 L607 425 L607 420 L614 408 L615 380 L611 376 L609 367 L611 341 L608 330 L602 323 L602 316 L597 309 L592 317 L591 333 L588 341 L588 348 L582 369 L578 395 L579 415 L570 417 L566 420 L566 428 L562 433 L538 435 L530 432 L540 411 L551 399 L552 386 L558 363 L559 347 L556 324 L552 319 L552 309 L539 294 L531 261 L527 255 L519 247 L473 282 L461 295 L458 302 L453 306 L445 304 L441 301 L434 302 L430 300 L421 287 L413 278 L400 271 L381 269 L366 271 L346 277 L342 282 L340 290 L337 316 L334 324 L334 341 L326 359 L324 384 L332 428 L329 430 L324 427 L322 430 L324 435 L324 442 L317 450 L287 452 L280 448 L282 442 L289 425 L295 417 L300 406 L303 389 L303 371 L300 358 L294 348 L291 359 L291 374 L294 395 L293 414 L286 425 L281 439 L248 439 L250 430 L257 421 L258 415 L267 406 L267 394 L270 380 L269 353 L260 334 L257 315 L253 299 L250 296 L234 302 L215 302 L201 295 L185 281 L178 278 L171 268 L165 270 L159 269 L155 264 L140 231 L126 210 L120 204 L103 198 L96 191 L85 172 L79 151 L74 145 L59 144 L48 139 L32 144 L26 143 L13 132 L8 124 L9 117 L31 97 L41 81 L55 51 L64 39 L74 28 L87 19 L97 14 L109 12 Z"/></clipPath></defs><g clip-path="url(#body)"><a href="/en/cut/br/br1/"><path class="c" d="M197 300 L232 300 L262 280 L345 276 L374 281 L374 474 L144 474 Z"><title>1. Músculo dianteiro (Fore shank)</title></path></a><a href="/en/cut/br/br2/"><path class="c" d="M85 163 L144 194 L197 221 L229 260 L262 280 L232 300 L197 300 L144 474 L61 474 Z"><title>2. Peito (Brisket)</title></path></a><a href="/en/cut/br/br3/"><path class="c" d="M162 68 L199 55 L203 64 L210 135 L217 177 L144 194 L85 163 Z"><title>3. Pescoço (Neck)</title></path></a><a href="/en/cut/br/br4/"><path class="c" d="M203 64 L250 73 L293 70 L309 59 L304 64 L302 142 L210 135 Z"><title>4. Acém (Chuck)</title></path></a><a href="/en/cut/br/br5/"><path class="c" d="M199 -33 L321 -33 L316 38 L309 59 L293 70 L250 73 L203 64 L199 55 Z"><title>5. Cupim (Hump)</title></path></a><a href="/en/cut/br/br6/"><path class="c" d="M210 135 L302 142 L309 185 L316 215 L345 276 L262 280 L229 260 L197 221 L144 194 L217 177 Z"><title>6. Paleta (Shoulder clod)</title></path></a><a href="/en/cut/br/br7/"><path class="c" d="M309 59 L316 38 L321 -33 L380 -33 L378 90 L342 91 L303 97 L304 64 Z"><title>7. Capa de filé (Lifter meat)</title></path></a><a href="/en/cut/br/br8/"><path class="c" d="M303 97 L342 91 L378 90 L375 142 L302 142 Z"><title>8. Filé de costela (Rib steak)</title></path></a><a href="/en/cut/br/br9/"><path class="c" d="M427 135 L522 127 L524 170 L512 203 L463 215 L460 201 Z"><title>9. Aba do filé (Flank)</title></path></a><a href="/en/cut/br/br10/"><path class="c" d="M302 142 L375 142 L427 135 L460 201 L467 250 L472 286 L472 368 L374 368 L374 281 L345 276 L316 215 L309 185 Z"><title>10. Ponta de agulha (Short plate)</title></path></a><a href="/en/cut/br/br11/"><path class="c on" d="M380 -33 L524 -33 L522 127 L427 135 L375 142 L378 90 Z"><title>11. Contrafilé (Striploin)</title></path></a><a href="/en/cut/br/br13/"><path class="c" d="M463 215 L512 203 L522 247 L492 368 L472 368 L472 286 L467 250 Z"><title>13. Fraldinha (Flap steak)</title></path></a><a href="/en/cut/br/br14/"><path class="c" d="M524 170 L560 158 L548 209 L522 247 L512 203 Z"><title>14. Maminha (Tri-tip)</title></path></a><a href="/en/cut/br/br15/"><path class="c" d="M524 -33 L539 -33 L536 61 L551 91 L586 97 L560 158 L524 170 L522 127 Z"><title>15. Alcatra (Top sirloin)</title></path></a><a href="/en/cut/br/br16/"><path class="c" d="M539 -33 L628 -33 L614 71 L586 97 L551 91 L536 61 Z"><title>16. Picanha (Rump cap)</title></path></a><a href="/en/cut/br/br17/"><path class="c" d="M560 158 L576 170 L581 215 L576 274 L557 297 L510 303 L522 247 L548 209 Z"><title>17. Patinho (Knuckle)</title></path></a><a href="/en/cut/br/br20/"><path class="c" d="M628 -33 L699 -33 L699 288 L604 291 L576 274 L581 215 L576 170 L560 158 L586 97 L614 71 Z"><title>20. Coxão duro (Outside flat)</title></path></a><a href="/en/cut/br/br21/"><path class="c" d="M510 303 L557 297 L576 274 L604 291 L699 288 L699 474 L439 474 Z"><title>21. Músculo traseiro (Hind shank)</title></path></a><a href="/en/cut/br/br12/"><path class="c dash" d="M381 105 Q381 86 406 86 L543 96 Q559 101 556 116 Q550 124 522 123 L389 122 Q381 119 381 105 Z"><title>12. Filé mignon (Tenderloin)</title></path></a><a href="/en/cut/br/br18/"><path class="c dash" d="M532 212 A31 40 0 1 0 594 212 A31 40 0 1 0 532 212 Z"><title>18. Coxão mole (Topside)</title></path></a><a href="/en/cut/br/br19/"><path class="c" d="M614 125 Q635 125 636 151 L632 205 Q628 245 610 248 Q596 248 598 222 L602 151 Q602 125 614 125 Z"><title>19. Lagarto (Eye of round)</title></path></a><path class="nm" d="M-33 -33 L162 -33 L168 26 L199 32 L199 55 L162 68 L85 163 L61 474 L-33 474 Z"/><path class="nm" d="M640 194 L641 236 L643 267 L645 291 L648 303 L651 320 L654 334 L655 349 L653 359 L651 367 L649 361 L648 369 L644 363 L642 371 L640 361 L637 354 L636 340 L637 324 L640 307 L640 291 L638 267 L637 236 L636 205 Z"/></g><path class="outline" d="M110 11 L123 11 L127 13 L130 17 L131 26 L136 31 L142 33 L186 33 L188 38 L172 50 L175 52 L181 52 L186 48 L201 51 L205 48 L235 19 L247 13 L266 11 L278 14 L286 20 L288 26 L289 44 L294 50 L304 55 L334 64 L394 64 L440 52 L504 41 L539 42 L579 48 L597 53 L608 60 L625 76 L635 94 L638 150 L640 194 L641 236 L643 267 L645 291 L648 303 L651 320 L654 334 L655 349 L653 359 L651 367 L649 361 L648 369 L644 363 L642 371 L640 361 L637 354 L636 340 L637 324 L640 307 L640 291 L638 267 L637 236 L636 205 L629 214 L623 234 L620 251 L621 268 L624 286 L628 303 L629 322 L630 340 L632 359 L637 379 L640 396 L641 406 L645 414 L644 417 L640 417 L636 421 L638 438 L635 441 L616 445 L608 445 L605 441 L598 441 L598 438 L607 425 L607 420 L614 408 L615 380 L611 376 L609 367 L611 341 L608 330 L602 323 L602 316 L597 309 L592 317 L591 333 L588 341 L588 348 L582 369 L578 395 L579 415 L570 417 L566 420 L566 428 L562 433 L538 435 L530 432 L540 411 L551 399 L552 386 L558 363 L559 347 L556 324 L552 319 L552 309 L539 294 L531 261 L527 255 L519 247 L473 282 L461 295 L458 302 L453 306 L445 304 L441 301 L434 302 L430 300 L421 287 L413 278 L400 271 L381 269 L366 271 L346 277 L342 282 L340 290 L337 316 L334 324 L334 341 L326 359 L324 384 L332 428 L329 430 L324 427 L322 430 L324 435 L324 442 L317 450 L287 452 L280 448 L282 442 L289 425 L295 417 L300 406 L303 389 L303 371 L300 358 L294 348 L291 359 L291 374 L294 395 L293 414 L286 425 L281 439 L248 439 L250 430 L257 421 L258 415 L267 406 L267 394 L270 380 L269 353 L260 334 L257 315 L253 299 L250 296 L234 302 L215 302 L201 295 L185 281 L178 278 L171 268 L165 270 L159 269 L155 264 L140 231 L126 210 L120 204 L103 198 L96 191 L85 172 L79 151 L74 145 L59 144 L48 139 L32 144 L26 143 L13 132 L8 124 L9 117 L31 97 L41 81 L55 51 L64 39 L74 28 L87 19 L97 14 L109 12 Z"/></svg>
+<p><a href="/app/">See the full chart</a></p>
+<h2>In other countries</h2><ul class="abroad"><li><strong>Argentina</strong>: <a href="/en/cut/ar/ar13/">Bife angosto</a><br><span class="why">Contrafilé and Bife angosto are the same cut: the strip loin behind the ribs, the longissimus over the lumbar vertebrae. Sliced, it gives the bife de chorizo.</span></li><li><strong>United States</strong>: <a href="/en/cut/us/us3/">Short loin</a><br><span class="why">The contrafilé is the strip loin: the longissimus over the lumbar vertebrae. The US short loin holds it on the bone with the front of the tenderloin, which is how T-bones and porterhouses come out of it. Boned, without the tenderloin, it is the strip loin, sold as New York strip.</span></li><li><strong>Portugal</strong>: <a href="/en/cut/pt/pt13/">Vazia</a><br><span class="why">Contrafilé and Vazia are the same cut: the strip loin behind the ribs, the longissimus over the lumbar vertebrae. Sliced, it gives the bife de chorizo. Mind the name: Portugal&#x27;s vazia is the strip loin, not Brazil&#x27;s vazio, the flank.</span></li></ul>
+<h2>How to cook it</h2><section class="prep"><h3>Grilled rib fingers</h3><p class="meta">BBQ · 20 min · Hot coals, grate set high</p><p class="meta">Done when: Browned outside, still juicy</p><ol><li>Season the strips with coarse salt just before they go on.</li><li>Grill over high heat, turning now and then, for 12 to 15 minutes.</li><li>If dripping fat flares up, move them off the coals for a moment.</li><li>Cut into pieces and serve as a starter.</li></ol></section>
+<h2>All cuts in the Brazilian chart</h2>
+<ul class="all"><li><a href="/en/cut/br/br1/">1. Músculo dianteiro (Fore shank)</a></li><li><a href="/en/cut/br/br2/">2. Peito (Brisket)</a></li><li><a href="/en/cut/br/br3/">3. Pescoço (Neck)</a></li><li><a href="/en/cut/br/br4/">4. Acém (Chuck)</a></li><li><a href="/en/cut/br/br5/">5. Cupim (Hump)</a></li><li><a href="/en/cut/br/br6/">6. Paleta (Shoulder clod)</a></li><li><a href="/en/cut/br/br7/">7. Capa de filé (Lifter meat)</a></li><li><a href="/en/cut/br/br8/">8. Filé de costela (Rib steak)</a></li><li><a href="/en/cut/br/br9/">9. Aba do filé (Flank)</a></li><li><a href="/en/cut/br/br10/">10. Ponta de agulha (Short plate)</a></li><li class=here><a href="/en/cut/br/br11/">11. Contrafilé (Striploin)</a></li><li><a href="/en/cut/br/br12/">12. Filé mignon (Tenderloin)</a></li><li><a href="/en/cut/br/br13/">13. Fraldinha (Flap steak)</a></li><li><a href="/en/cut/br/br14/">14. Maminha (Tri-tip)</a></li><li><a href="/en/cut/br/br15/">15. Alcatra (Top sirloin)</a></li><li><a href="/en/cut/br/br16/">16. Picanha (Rump cap)</a></li><li><a href="/en/cut/br/br17/">17. Patinho (Knuckle)</a></li><li><a href="/en/cut/br/br18/">18. Coxão mole (Topside)</a></li><li><a href="/en/cut/br/br19/">19. Lagarto (Eye of round)</a></li><li><a href="/en/cut/br/br20/">20. Coxão duro (Outside flat)</a></li><li><a href="/en/cut/br/br21/">21. Músculo traseiro (Hind shank)</a></li></ul>
 <p>Beef cuts on a map: where each cut is, what other countries call it and how to cook it.</p>
-<footer><a href="/">Mapa do Boi</a> · <a href="/privacy/">Privacy</a></footer>
+<footer><a href="/en/">Mapa do Boi</a> · <a href="/privacy/">Privacy</a></footer>
 </body>
 </html>
