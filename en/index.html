@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/analytics.js?v=3"></script>
-<title>Mapa do Boi · The Beef Encyclopedia</title>
-<meta name="description" content="Beef cuts on a map, with equivalents between the Brazilian (including Gaúcho), Argentine, US, Canadian and Portuguese charts, plus a butcher label scanner and step-by-step recipes, all free and without ads.">
+<title>Mapa do Boi · Beef Cuts Chart and Names by Country</title>
+<meta name="description" content="See where every beef and pork cut sits, what Brazil, Argentina, the US, Canada and Portugal call it, and how to cook it, in a free app with no ads.">
 <link rel="canonical" href="https://mapadoboi.wiltonpelicari.com/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://mapadoboi.wiltonpelicari.com/">
 <link rel="alternate" hreflang="en" href="https://mapadoboi.wiltonpelicari.com/en/">
@@ -17,6 +17,13 @@
 <meta property="og:description" content="Beef cuts on a map, with equivalents between the Brazilian (including Gaúcho), Argentine, US, Canadian and Portuguese charts, plus a butcher label scanner and step-by-step recipes, all free and without ads.">
 <meta property="og:url" content="https://mapadoboi.wiltonpelicari.com/en/">
 <meta property="og:image" content="https://mapadoboi.wiltonpelicari.com/img/en/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="514">
+<meta property="og:image:alt" content="The Mapa do Boi cuts chart drawn on a steer">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F2EFEA" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#17181A" media="(prefers-color-scheme: dark)">
@@ -26,8 +33,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
-<link rel="stylesheet" href="/site.css?v=5">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mapa do Boi","alternateName":"MapaDoBoi","url":"https://mapadoboi.wiltonpelicari.com/"}</script>
+<link rel="stylesheet" href="/site.css?v=6">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mapadoboi.wiltonpelicari.com/#website","name":"Mapa do Boi","alternateName":"MapaDoBoi","url":"https://mapadoboi.wiltonpelicari.com/","inLanguage":["pt-BR","en","fr"],"publisher":{"@id":"https://mapadoboi.wiltonpelicari.com/#publisher"}},{"@type":"Person","@id":"https://mapadoboi.wiltonpelicari.com/#publisher","name":"Wilton Pelicari","url":"https://www.wiltonpelicari.com/"},{"@type":"WebPage","@id":"https://mapadoboi.wiltonpelicari.com/en/#webpage","url":"https://mapadoboi.wiltonpelicari.com/en/","name":"Mapa do Boi · Beef Cuts Chart and Names by Country","description":"See where every beef and pork cut sits, what Brazil, Argentina, the US, Canada and Portugal call it, and how to cook it, in a free app with no ads.","inLanguage":"en","isPartOf":{"@id":"https://mapadoboi.wiltonpelicari.com/#website"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://mapadoboi.wiltonpelicari.com/img/en/og.jpg","width":1200,"height":514}}]}</script>
 </head>
 <body>
 <div class="wrap">
@@ -47,7 +54,7 @@
 </div>
 <p class="note">Free · no ads · no account. On your home screen it is called “Beef Chart”.</p>
 </div>
-<img class="hero-shot" src="/img/en/01.webp" width="508" height="829" alt="Mapa do Boi screen with the cuts map drawn on a steer">
+<img class="hero-shot" fetchpriority="high" src="/img/en/01.webp" width="508" height="829" alt="Mapa do Boi screen with the cuts map drawn on a steer">
 </section>
 </div>
 
@@ -65,7 +72,8 @@
 <div>
 <h3>One cut, <span class="hl">many countries</span></h3>
 <p>A love of barbecue shouldn&#x27;t stop at a language border: the piece Brazilians call <i>picanha</i> is top sirloin cap in the United States and <i>tapa de cuadril</i> in Argentina. Since every country splits the steer its own way, the app shows the equivalents between the charts, so you know what to ask your butcher when a recipe comes from abroad or when you travel.</p>
-<ul><li>Brazil, with the Gaúcho variant</li><li>Argentina</li><li>United States, with the Canadian variant</li><li>Portugal</li></ul></div>
+<ul><li>Brazil, with the Gaúcho variant</li><li>Argentina</li><li>United States, with the Canadian variant</li><li>Portugal</li></ul>
+<p><a href="#cuts">See every cut on each chart</a></p></div>
 </article>
 <article class="feature">
 <img class="shot" src="/img/en/02.webp" width="508" height="829" loading="lazy" alt="Tenderness, fat and cooking filters on the map">
@@ -103,6 +111,27 @@
 </div>
 </article>
 </section>
+
+<!-- cut index: written by tools/build_site.py in the MapaDoBoi repo -->
+<section class="cut-index wrap" id="cuts">
+<h2 class="section-title">Every <span class="hl">cut</span></h2>
+<p class="section-lead">Each cut has its own page, showing where it sits on the animal, what other countries call it and how to cook it.</p>
+<h3 class="cut-kind">Beef</h3>
+<div class="cut-charts">
+<div><h4>Brazil</h4><ul><li><a href="/en/cut/br/br1/">Músculo dianteiro (Fore shank)</a></li><li><a href="/en/cut/br/br2/">Peito (Brisket)</a></li><li><a href="/en/cut/br/br3/">Pescoço (Neck)</a></li><li><a href="/en/cut/br/br4/">Acém (Chuck)</a></li><li><a href="/en/cut/br/br5/">Cupim (Hump)</a></li><li><a href="/en/cut/br/br6/">Paleta (Shoulder clod)</a></li><li><a href="/en/cut/br/br7/">Capa de filé (Lifter meat)</a></li><li><a href="/en/cut/br/br8/">Filé de costela (Rib steak)</a></li><li><a href="/en/cut/br/br9/">Aba do filé (Flank)</a></li><li><a href="/en/cut/br/br10/">Ponta de agulha (Short plate)</a></li><li><a href="/en/cut/br/br11/">Contrafilé (Striploin)</a></li><li><a href="/en/cut/br/br12/">Filé mignon (Tenderloin)</a></li><li><a href="/en/cut/br/br13/">Fraldinha (Flap steak)</a></li><li><a href="/en/cut/br/br14/">Maminha (Tri-tip)</a></li><li><a href="/en/cut/br/br15/">Alcatra (Top sirloin)</a></li><li><a href="/en/cut/br/br16/">Picanha (Rump cap)</a></li><li><a href="/en/cut/br/br17/">Patinho (Knuckle)</a></li><li><a href="/en/cut/br/br18/">Coxão mole (Topside)</a></li><li><a href="/en/cut/br/br19/">Lagarto (Eye of round)</a></li><li><a href="/en/cut/br/br20/">Coxão duro (Outside flat)</a></li><li><a href="/en/cut/br/br21/">Músculo traseiro (Hind shank)</a></li></ul></div>
+<div><h4>Argentina</h4><ul><li><a href="/en/cut/ar/ar1/">Cogote (Neck)</a></li><li><a href="/en/cut/ar/ar2/">Aguja (Chuck)</a></li><li><a href="/en/cut/ar/ar3/">Marucha (Top blade)</a></li><li><a href="/en/cut/ar/ar4/">Paleta (Shoulder clod)</a></li><li><a href="/en/cut/ar/ar5/">Pecho (Brisket)</a></li><li><a href="/en/cut/ar/ar6/">Brazuelo (Fore shank)</a></li><li><a href="/en/cut/ar/ar7/">Bife ancho (Ribeye)</a></li><li><a href="/en/cut/ar/ar8/">Tapa de asado (Rib cover)</a></li><li><a href="/en/cut/ar/ar9/">Asado (Short ribs)</a></li><li><a href="/en/cut/ar/ar10/">Falda (Short plate)</a></li><li><a href="/en/cut/ar/ar11/">Matambre (Rose meat)</a></li><li><a href="/en/cut/ar/ar12/">Entraña (Skirt steak)</a></li><li><a href="/en/cut/ar/ar13/">Bife angosto (Striploin)</a></li><li><a href="/en/cut/ar/ar14/">Lomo (Tenderloin)</a></li><li><a href="/en/cut/ar/ar15/">Vacío (Flank)</a></li><li><a href="/en/cut/ar/ar16/">Tapa de cuadril (Rump cap)</a></li><li><a href="/en/cut/ar/ar17/">Cuadril (Rump)</a></li><li><a href="/en/cut/ar/ar18/">Colita de cuadril (Tri-tip)</a></li><li><a href="/en/cut/ar/ar19/">Bola de lomo (Knuckle)</a></li><li><a href="/en/cut/ar/ar20/">Nalga (Topside)</a></li><li><a href="/en/cut/ar/ar21/">Cuadrada (Silverside)</a></li><li><a href="/en/cut/ar/ar22/">Peceto (Eye of round)</a></li><li><a href="/en/cut/ar/ar23/">Garrón (Hind shank)</a></li></ul></div>
+<div><h4>United States</h4><ul><li><a href="/en/cut/us/us1/">Chuck roll</a></li><li><a href="/en/cut/us/us14/">Neck</a></li><li><a href="/en/cut/us/us15/">Top blade</a></li><li><a href="/en/cut/us/us16/">Shoulder clod</a></li><li><a href="/en/cut/us/us2/">Ribeye</a></li><li><a href="/en/cut/us/us17/">Back ribs</a></li><li><a href="/en/cut/us/us3/">Short loin</a></li><li><a href="/en/cut/us/us5/">Tenderloin</a></li><li><a href="/en/cut/us/us6/">Top sirloin</a></li><li><a href="/en/cut/us/us7/">Bottom sirloin</a></li><li><a href="/en/cut/us/us13/">Top sirloin cap</a></li><li><a href="/en/cut/us/us8/">Bottom round</a></li><li><a href="/en/cut/us/us18/">Knuckle (Sirloin tip)</a></li><li><a href="/en/cut/us/us19/">Top round</a></li><li><a href="/en/cut/us/us20/">Eye of round</a></li><li><a href="/en/cut/us/us21/">Hind shank</a></li><li><a href="/en/cut/us/us9/">Brisket</a></li><li><a href="/en/cut/us/us10/">Fore shank</a></li><li><a href="/en/cut/us/us11/">Short ribs</a></li><li><a href="/en/cut/us/us22/">Skirt steak</a></li><li><a href="/en/cut/us/us12/">Flank (Flank steak)</a></li></ul></div>
+<div><h4>Portugal</h4><ul><li><a href="/en/cut/pt/pt1/">Cachaço (Neck)</a></li><li><a href="/en/cut/pt/pt2/">Acém comprido (Chuck)</a></li><li><a href="/en/cut/pt/pt3/">Acém redondo (Ribeye)</a></li><li><a href="/en/cut/pt/pt4/">Aba das costelas (Short ribs)</a></li><li><a href="/en/cut/pt/pt5/">Maçã do peito (Brisket)</a></li><li><a href="/en/cut/pt/pt6/">Peito alto (Upper brisket)</a></li><li><a href="/en/cut/pt/pt7/">Prego do peito (Short plate)</a></li><li><a href="/en/cut/pt/pt8/">Agulha (Chuck tender)</a></li><li><a href="/en/cut/pt/pt9/">Sete (Top blade)</a></li><li><a href="/en/cut/pt/pt10/">Cheio da pá (Shoulder clod)</a></li><li><a href="/en/cut/pt/pt11/">Lagarto da pá (Shoulder)</a></li><li><a href="/en/cut/pt/pt12/">Chambão da mão (Fore shank)</a></li><li><a href="/en/cut/pt/pt13/">Vazia (Striploin)</a></li><li><a href="/en/cut/pt/pt14/">Lombo (Tenderloin)</a></li><li><a href="/en/cut/pt/pt15/">Aba grossa (Flank)</a></li><li><a href="/en/cut/pt/pt16/">Aba delgada (Thin flank)</a></li><li><a href="/en/cut/pt/pt17/">Ponta da alcatra (Tri-tip)</a></li><li><a href="/en/cut/pt/pt18/">Cheio da alcatra (Top sirloin)</a></li><li><a href="/en/cut/pt/pt19/">Folha (Rump cap)</a></li><li><a href="/en/cut/pt/pt20/">Rabadilha (Knuckle)</a></li><li><a href="/en/cut/pt/pt21/">Pojadouro (Topside)</a></li><li><a href="/en/cut/pt/pt22/">Chã de fora (Silverside)</a></li><li><a href="/en/cut/pt/pt23/">Ganso redondo (Eye of round)</a></li><li><a href="/en/cut/pt/pt24/">Chambão da perna (Hind shank)</a></li></ul></div>
+</div>
+<h3 class="cut-kind">Pork</h3>
+<div class="cut-charts">
+<div><h4>Brazil</h4><ul><li><a href="/en/cut/pork/br/copa/">Copa-lombo (Collar (shoulder butt))</a></li><li><a href="/en/cut/pork/br/papada/">Papada (Jowl)</a></li><li><a href="/en/cut/pork/br/paleta/">Paleta (Picnic shoulder)</a></li><li><a href="/en/cut/pork/br/lombo/">Lombo (Loin)</a></li><li><a href="/en/cut/pork/br/carre/">Carré (Rib loin (chops))</a></li><li><a href="/en/cut/pork/br/costela/">Costela (Spare ribs)</a></li><li><a href="/en/cut/pork/br/sua/">Suã (Backbone)</a></li><li><a href="/en/cut/pork/br/file_mignon/">Filé mignon (Tenderloin)</a></li><li><a href="/en/cut/pork/br/barriga/">Pancetta (Belly)</a></li><li><a href="/en/cut/pork/br/pernil/">Pernil (Ham (leg))</a></li><li><a href="/en/cut/pork/br/picanha/">Picanha (Rump cap)</a></li><li><a href="/en/cut/pork/br/alcatra/">Alcatra (Top sirloin)</a></li><li><a href="/en/cut/pork/br/maminha/">Maminha (Tri-tip)</a></li><li><a href="/en/cut/pork/br/patinho/">Patinho (Knuckle)</a></li><li><a href="/en/cut/pork/br/coxao_mole/">Coxão mole (Topside (inside ham))</a></li><li><a href="/en/cut/pork/br/lagarto/">Lagarto (Eye of round)</a></li><li><a href="/en/cut/pork/br/coxao_duro/">Coxão duro (Outside flat (outside ham))</a></li><li><a href="/en/cut/pork/br/joelho/">Joelho (Hock (shank))</a></li><li><a href="/en/cut/pork/br/mao/">Mão (Front trotter)</a></li><li><a href="/en/cut/pork/br/pe/">Pé (Hind trotter)</a></li></ul></div>
+<div><h4>Argentina</h4><ul><li><a href="/en/cut/pork/ar/copa/">Bondiola (Collar (shoulder butt))</a></li><li><a href="/en/cut/pork/ar/papada/">Papada (Jowl)</a></li><li><a href="/en/cut/pork/ar/paleta/">Paleta (Picnic shoulder)</a></li><li><a href="/en/cut/pork/ar/lombo/">Carré (Loin)</a></li><li><a href="/en/cut/pork/ar/file_mignon/">Solomillo (Tenderloin)</a></li><li><a href="/en/cut/pork/ar/costela/">Pechito (Spare ribs)</a></li><li><a href="/en/cut/pork/ar/vacio/">Vacío (Flank)</a></li><li><a href="/en/cut/pork/ar/barriga/">Panceta (Belly)</a></li><li><a href="/en/cut/pork/ar/matambre/">Matambre (Rose meat)</a></li><li><a href="/en/cut/pork/ar/pernil/">Pernil (Ham (leg))</a></li><li><a href="/en/cut/pork/ar/cuadril/">Cuadril (Rump)</a></li><li><a href="/en/cut/pork/ar/patinho/">Bola de lomo (Knuckle)</a></li><li><a href="/en/cut/pork/ar/coxao_duro/">Cuadrada (Outside flat (outside ham))</a></li><li><a href="/en/cut/pork/ar/coxao_mole/">Nalga (Topside (inside ham))</a></li><li><a href="/en/cut/pork/ar/lagarto/">Peceto (Eye of round)</a></li><li><a href="/en/cut/pork/ar/joelho/">Garrón (Hock (shank))</a></li><li><a href="/en/cut/pork/ar/mao/">Manitos (Front trotter)</a></li><li><a href="/en/cut/pork/ar/pe/">Patitas (Hind trotter)</a></li></ul></div>
+<div><h4>Portugal</h4><ul><li><a href="/en/cut/pork/pt/copa/">Cachaço (Collar (shoulder butt))</a></li><li><a href="/en/cut/pork/pt/papada/">Papada (Jowl)</a></li><li><a href="/en/cut/pork/pt/paleta/">Pá (Picnic shoulder)</a></li><li><a href="/en/cut/pork/pt/lombo/">Lombo (Loin)</a></li><li><a href="/en/cut/pork/pt/file_mignon/">Lombinho (Tenderloin)</a></li><li><a href="/en/cut/pork/pt/costela/">Entrecosto (Spare ribs)</a></li><li><a href="/en/cut/pork/pt/barriga/">Entremeada (Belly)</a></li><li><a href="/en/cut/pork/pt/pernil/">Perna (Ham (leg))</a></li><li><a href="/en/cut/pork/pt/chispe/">Chispe (Hock and trotter)</a></li></ul></div>
+<div><h4>United States</h4><ul><li><a href="/en/cut/pork/us/papada/">Jowl</a></li><li><a href="/en/cut/pork/us/copa/">Boston Butt (Collar (shoulder butt))</a></li><li><a href="/en/cut/pork/us/paleta/">Picnic Shoulder (Picnic shoulder)</a></li><li><a href="/en/cut/pork/us/joelho_dianteiro/">Shoulder Hock (Front hock)</a></li><li><a href="/en/cut/pork/us/mao/">Front Feet (Front trotter)</a></li><li><a href="/en/cut/pork/us/carre/">Rib End (Rib loin (chops))</a></li><li><a href="/en/cut/pork/us/lombo/">Center Loin (Center loin)</a></li><li><a href="/en/cut/pork/us/alcatra/">Sirloin</a></li><li><a href="/en/cut/pork/us/file_mignon/">Tenderloin</a></li><li><a href="/en/cut/pork/us/costela_lombo/">Back Ribs (Back ribs)</a></li><li><a href="/en/cut/pork/us/costela/">Spareribs (Spare ribs)</a></li><li><a href="/en/cut/pork/us/barriga/">Belly</a></li><li><a href="/en/cut/pork/us/patinho/">Leg Tip (Knuckle)</a></li><li><a href="/en/cut/pork/us/coxao_mole/">Inside Leg (Topside (inside ham))</a></li><li><a href="/en/cut/pork/us/lagarto/">Eye of Round (Eye of round)</a></li><li><a href="/en/cut/pork/us/coxao_duro/">Outside Leg (Outside flat (outside ham))</a></li><li><a href="/en/cut/pork/us/joelho/">Ham Hock (Hind hock (shank))</a></li><li><a href="/en/cut/pork/us/pe/">Hind Feet (Hind trotter)</a></li></ul></div>
+</div>
+</section>
+<!-- /cut index -->
 
 <section class="sources wrap" id="sources">
 <h2 class="section-title">Where the <span class="hl">data</span> comes from</h2>
