@@ -49,7 +49,7 @@
 <p class="lead">Do açougue à mesa, o Mapa do Boi reúne o que vale saber sobre cada corte de carne bovina, desde o nome que ele recebe em outros países até o jeito certo de prepará-lo.</p>
 <div class="actions">
 <a class="btn btn-primary" id="app-store" href="https://apps.apple.com/app/id6830041105"><span><small>Baixar na</small>App Store</span></a>
-<a class="btn btn-outline" href="#beta" aria-haspopup="dialog"><span><small>Disponível no</small>Google Play</span></a>
+<a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=pt_BR"><span><small>Disponível no</small>Google Play</span></a>
 <a class="btn btn-outline" href="/app/"><span><small>Use no</small>Navegador</span></a>
 </div>
 <p class="note">Grátis · sem anúncios · sem conta</p>
@@ -156,30 +156,5 @@
 <span>© 2026 Wilton Pelicari</span>
 </footer>
 </div>
-<dialog class="beta" id="beta" aria-labelledby="beta-title">
-<form method="dialog"><button class="beta-close" aria-label="Fechar">×</button></form>
-<p class="eyebrow">Teste fechado · Android</p>
-<h2 class="section-title" id="beta-title">Teste o app <span class="hl">antes de todo mundo</span></h2>
-<p class="section-lead">O Mapa do Boi para Android está em teste fechado no Google Play, e bastam três passos para participar e ajudar a liberar o lançamento oficial.</p>
-<ol class="steps">
-<li><strong>Entre no grupo de testadores</strong><p>Abra o <a href="https://groups.google.com/g/mapa-do-boi-testers">grupo mapa-do-boi-testers</a> e clique em “Participar do grupo”, usando a mesma conta Google do seu celular Android.</p></li>
-<li><strong>Aceite o convite de teste</strong><p>Abra o <a href="https://play.google.com/apps/testing/com.pelicari.mapadoboi">link do teste</a> com essa conta e clique em “Quero participar” (ou “Become a tester”).</p></li>
-<li><strong>Baixe o app</strong><p>Instale o <a href="https://play.google.com/store/apps/details?id=com.pelicari.mapadoboi&amp;hl=pt_BR">Mapa do Boi no Google Play</a>, lembrando que ele pode levar alguns minutos para aparecer depois do passo 2.</p></li>
-</ol>
-<p class="beta-feedback">Encontrou algum problema ou tem uma sugestão? Escreva para <a href="mailto:support@wiltonpelicari.com">support@wiltonpelicari.com</a>.</p>
-</dialog>
-<script>
-(function () {
-  var d = document.getElementById('beta');
-  if (!d || !d.showModal) return;
-  function open() { if (!d.open) d.showModal(); }
-  document.querySelectorAll('a[href="#beta"]').forEach(function (a) {
-    a.addEventListener('click', function (e) { e.preventDefault(); history.replaceState(null, '', '#beta'); open(); });
-  });
-  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
-  d.addEventListener('close', function () { if (location.hash === '#beta') history.replaceState(null, '', location.pathname + location.search); });
-  if (location.hash === '#beta') open();
-})();
-</script>
 </body>
 </html>
